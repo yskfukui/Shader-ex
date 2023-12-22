@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+/* App.css */
+
+/* body, html {
+  height: 100%;
+  margin: 0;
+} */
+
+.fullScreenContainer {
+  width: 100vw;
+  height: 100vh;
+}

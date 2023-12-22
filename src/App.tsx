@@ -1,24 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import "./App.css";
+import FCPanoramaViewer from "./components/PanoramaViewer";
 
 function App() {
+  const imgUrl = "sample1.jpg";
+  // const imgUrl = "mandrill.png";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="fullScreenContainer">
+      <h1>React Three Fiber Image</h1>
+
+      <FCPanoramaViewer imgUrl={imgUrl} />
     </div>
   );
 }
